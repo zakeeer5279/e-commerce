@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+    <head><meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatin=ble" content="IE=edge">
+        <meta name="viewport"  content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="sytle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+          .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f9f9f9;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+              z-index: 1;
+          }
+  
+          .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+          }
+  
+          .dropdown-content a:hover {
+              background-color: #f1f1f1;
+          }
+  
+          .dropdown:hover .dropdown-content {
+              display: block;
+          }
+  
+          .form-popup {
+              display: none;
+              position: fixed;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              border: 3px solid #f1f1f1;
+              z-index: 9;
+              background-color: white;
+              padding: 20px;
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+          }
+  
+          .form-container {
+              max-width: 300px;
+              padding: 10px;
+          }
+  
+          .form-container input[type=text],
+          .form-container input[type=password] {
+              width: 100%;
+              padding: 15px;
+              margin: 5px 0 22px 0;
+              display: inline-block;
+              border: none;
+              background: #f1f1f1;
+          }
+  
+          .form-container input[type=text]:focus,
+          .form-container input[type=password]:focus {
+              background-color: #ddd;
+              outline: none;
+          }
+  
+          .form-container .btn {
+              background-color: #04AA6D;
+              color: white;
+              padding: 16px 20px;
+              border: none;
+              cursor: pointer;
+              width: 100%;
+              margin-bottom: 10px;
+              opacity: 0.8;
+          }
+  
+          .form-container .cancel {
+              background-color: red;
+          }
+  
+          .form-container .btn:hover,
+          .form-container .cancel:hover {
+              opacity: 1;
+          }
+      </style>
+  </head>
+        <header>
+            <div class="navbar">
+                <div class="nav-logo border">
+                 <div class="logo">
+
+<img src="fox_png.png" alt="" height="60px" width="50px">
+
+                 </div>
+                </div>
+            
+                <div class="nav-address border">
+                  <p class="add-first">Deliver to</p>
+                    <div class="add-icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <P class="add-second">India</P>
+                  
+                    </div>
+                </div>
+
+                        <div class="nav-search">
+                            <select class="search-select">
+                               <option>All</option>
+                            </select>
+                           <input placeholder="SEARCH FOX TECH" class="search-input">
+                           <div class="SEARCH-ICON">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>  
+                        </div>
+
+                        <div class="nav-signin border dropdown">
+                          <p><button>REGISTER</button></p>
+                          <div class="dropdown-content">
+                              <a href="login.html" onclick="openForm('loginForm')">Login</a>
+                              <a href="sigup.html" onclick="openForm('signUpForm')">Sign Up</a>
+                          </div>
+                        </div>
+                          <div class="nav-return border">
+                            <p><span>Returns</span></p>
+                            <p class="nav-second">& Orders</p>
+                           </div>
+                                     <div class="nav-card border">
+                                        <i class="fa-solid fa-cart-arrow-down"></i>
+                                        Cart
+                                     </div>
+                
+            </div>
+
+
+            <div class="panel ">
+                <div class="panel-all border">
+                  <i class="fa-solid fa-bars"></i>
+                   All
+                </div>
+                  <div class="panel-ops ">
+                    <a href="Mobile&Accesssories" >Mobile&Accesssories</a>
+                    <a href="laptops&Accesssories" >laptops&Accesssories</a>
+                    <a href="TV & Home Entertainment" >TV & Home Entertainment</a>
+                    <a href="Cameras" >Cameras</a>
+                    <a href="Smart Technology" >Smart Technology</a>
+                  </div>
+                    <div class="panel-deals border">
+                        Shop deals in Electronics
+                    </div>
+                     
+                    
+                  
+            </div>
+        </header>
+        </div>
+
+<div class="hero-section">
+
+</div>
+
+
+      
+        <div class="shop-section ">
+          <div class="box1 box">
+            <div class="box-content">
+              <h2>Mobile & Accesssories </h2>
+            <div class="box-image" style="background-image: url('mobile1.png.png');"></div>
+            <p>See More</p>
+            </div>
+          </div>
+          <div class="box2 box">
+            <div class="box-content">
+              <h2>Laptops & Accessories </h2>
+            <div class="box-image" style="background-image: url('Laptops\ &\ Accessories.jpg.png');"></div>
+            <p>See More</p>
+            </div>
+          </div>
+          <div class="box3 box">
+            <div class="box-content">
+              <h2>TV & Home Entertainment </h2>
+            <div class="box-image" style="background-image: url('mobile3.png.jng.jpg');"></div>
+            <p>See More</p>
+            </div>
+          </div>
+          <div class="box4 box">
+            <div class="box-content">
+              <h2>Audio </h2>
+            <div class="box-image" style="background-image: url('audio.png.png');"></div>
+            <p>See More</p>
+            </div>
+          </div>
+          <div class="box1 box">
+            <div class="box-content">
+              <h2>  Cameras </h2>
+            <div class="box-image" style="background-image: url('Cameras.png.png');"></div>
+            <p>See More</p>
+            </div>
+          </div>
+          <div class="box2 box">
+            <div class="box-content">
+              <h2>SMART TECH</h2>
+            <div class="box-image" style="background-image: url('mobile5.png.jng.jpg');"></div>
+            <p>See More</p>
+            </div>
+          </div>
+          <div class="box3 box">
+            <div class="box-content">
+              <h2>Computer Peripherals </h2>
+            <div class="box-image" style="background-image: url('Computer\ Peripherals.png.png');"></div>
+            <p>See More</p>
+            </div>
+          </div>
+          <div class="box4 box">
+            <div class="box-content">
+              <h2>Musical Instruments </h2>
+            <div class="box-image" style="background-image: url('Musical\ Instruments.png.png');"></div>
+            <p>See More</p>
+            </div>
+          </div>
+        </div>
+
+<footer>
+  <div class="foot-panel1">
+    Back to Top
+  </div>
+<div class="foot-panel2">
+  <ul>
+    <P>ABOUT US</P>
+    <a>Careers</a>
+    <a>blog</a>
+    <a>about FOX TECH</a>
+    <a>FOX TECH Devices</a>
+  </ul>
+  <ul>
+    <P>ABOUT US</P>
+    <a>Careers</a>
+    <a>blog</a>
+    <a>about FOX TECH</a>
+    <a>FOX TECH Devices</a>
+  </ul>
+  <ul>
+    <P>ABOUT US</P>
+    <a>Careers</a>
+    <a>blog</a>
+    <a>about FOX TECH</a>
+    <a>FOX TECH Devices</a>
+  </ul>
+  <ul>
+    <P>ABOUT US</P>
+    <a>Careers</a>
+    <a>blog</a>
+    <a>about FOX TECH</a>
+    <a>FOX TECH Devices</a>
+  </ul>
+</div>
+<div class="foot-panel3">
+  
+    <img src="fox_png.png" alt="" height="90px" width="80px">
+
+ 
+    
+    </footer>
+     </div>
+</html>
